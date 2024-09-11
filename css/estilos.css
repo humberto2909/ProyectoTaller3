@@ -1,0 +1,65 @@
+
+.flexContenedor {
+
+    display: flex;
+
+}
+
+.divIzquierdo {
+
+    display: flex;
+    width: 50%;
+    align-items: center;
+   
+
+}
+
+.divDerecho {
+
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    margin-top: 50px;
+
+}
+
+nav {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+a {
+
+    color: rgb(124, 120, 120);
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+li::marker {
+    content: "- ";
+}
+
+aside {
+    border: 1px solid;
+    margin-top: -150px;
+}
+
+
+form {
+    width: 300px;
+}
+
+label, select {
+    display: inline-block;
+    width: 100px;
+}
+
+.Centrado {
+    display: inline-block;
+    
+}
+

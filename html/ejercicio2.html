@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+
+    <style>
+        li {
+            margin-top: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Your details</legend>
+            <ol>
+                <li>
+                    <label for="">Name</label>
+
+                    <input type="text" placeholder="First and last name" required pattern="[A-Za-z\s]+" title="Use mayusculas y minusculas con minimo un espacio">
+                </li>
+
+                <li>
+                    <label for="">Email</label>
+
+                    <input type="email" placeholder="example@domain.com" required maxlength="30">
+                </li>
+
+                <li>
+                    <label for="">Phone</label>
+
+                    <input type="text" placeholder="Eg. +447500000000">
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend> Delivery address</legend>
+            <ol>
+                <li>
+                    <label for="">Address</label>
+
+                    <textarea rows="5"></textarea>
+                </li>
+
+                <li>
+                    <label for="">Post code</label>
+
+                    <input type="text" required pattern="\d{6,8}" title="Minimo 6 digitos, maximo 8 digitos">
+                </li>
+
+                <li>
+                    <label for="">Country</label>
+
+                    <input type="text">
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend> Card details</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <ol>
+                            <li>
+                                <input type="radio" name="Card_Type"> VISA
+                            </li>
+
+                            <li>
+                                <input type="radio" name="Card_Type"> AmEx
+                            </li>
+
+                            <li>
+                                <input type="radio" name="Card_Type"> Mastercard
+                            </li>
+                        </ol>
+                    </fieldset>
+                </li>
+
+                <li>
+                    <label for="">Card number</label>
+
+                    <input type="text" required pattern="\d{1,3}" title="Minimo 1 digitos, maximo 3 digitos">
+                </li>
+
+                <li>
+                    <label for="">Security code</label>
+
+                    <input type="text" required pattern="R\d" title="Inicie con 'R' seguida de 1 digito ">
+                </li>
+
+                <li>
+                    <label for="">Name on card</label>
+
+                    <input type="text" placeholder="Exact name as on the card">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Buy it" style="border-radius: 30px;">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
